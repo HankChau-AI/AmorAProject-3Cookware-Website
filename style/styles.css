@@ -7,4 +7,27 @@
 .navlogo{
 
 }
+
+.headerhero{
+    background-image: url(/assets/hero.jpg);
+    height: 1280px;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: 100%;
+}
+
+.headerherotext{
+    /* UI Properties */
+    opacity: 1;
+    position: absolute;
+    text-align: center;
+    /* Font */
+    color: white;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255, 1);;
+    padding: 20px;
+}
 /* NavBar and Hero */

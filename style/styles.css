@@ -1,9 +1,5 @@
 /* NavBar and Hero */
 
-.navbuttons{
-    
-}
-
 .navlogo{
     height: auto; 
     width: 20%;
@@ -11,19 +7,51 @@
     margin-bottom: 1rem;
 }
 
-
-
-
-
-
-.headerhero{
+/* .headerhero{
     background-image: url(/assets/hero.jpg);
     height: 1280px;
     background-repeat: no-repeat;
     width: auto;
     background-size: cover;
     object-fit: cover;
+} */
+
+
+.headerherogrid{
+    width: 100%;
+    display: grid;
+    grid-template-columns:  repeat(15, 1fr);
+    grid-template-rows: repeat(14, 1fr);
+    /* grid-template-columns: repeat(7,1fr) */
+    /* When giving padding 2 numbers, the first effects the y axis (top/bottom) and the second effects your x axis (left/right) */
 }
+
+
+
+/* ASK ISAIAH FOR HELP BECAUSE THIS GRID IS ASS */
+
+
+
+.herojpg{
+    background-image: url(/assets/hero.jpg);
+    grid-column: 1 / span 15;
+    grid-row: 1 / span 14;
+    margin: 0%;
+    background-repeat: no-repeat;
+}
+
+.herotext{
+    grid-column: 2/ span 3;
+    grid-row: 10;
+}
+
+.sale{
+    grid-row: 14;
+    grid-column: 1/ span 15;
+
+}
+
+
 
 .headerherotext{
     /* UI Properties */
@@ -37,17 +65,16 @@
     align-items: center;
     background: rgba(0, 0, 0, 0.6);
     color: rgb(255, 255, 255, 1);;
-    padding: 20px;
+    padding: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
-    margin-left: 7.5rem; 
-    margin-top: -25rem;
 }
+
 /* NavBar and Hero */
 
+
+
 /* Start Cooking */
-
-
 
 .cardsgrid{
     margin: 5rem;
@@ -87,3 +114,13 @@
 
 
 /* Start Cooking */
+
+/* New Arrivals */
+
+.newarrivalimg{
+    width: 100%;
+    height: 632px;
+    object-fit: cover;
+}
+
+/* New Arrivals */

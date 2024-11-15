@@ -1,3 +1,27 @@
+
+@font-face {
+    font-family: Roboto;
+    src: url(/assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-light;
+    src: url(/assets/fonts/Roboto/Roboto-Light.ttf);
+}
+
+.fontrobotobold{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.fontroboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+.fontrobotolight{
+    font-family: 'Roboto-light',sans-serif;
+}
+
 /* NavBar and Hero */
 
 .navlogo{
@@ -7,14 +31,19 @@
     margin-bottom: 1rem;
 }
 
-/* .headerhero{
-    background-image: url(/assets/hero.jpg);
-    height: 1280px;
-    background-repeat: no-repeat;
-    width: auto;
-    background-size: cover;
-    object-fit: cover;
-} */
+.navfont{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin-left: 3rem;
+    margin-right: 1rem;
+
+}
+
+.navrow{
+    display: flex;
+    flex-direction: row;
+}
+
 
 
 .headerherogrid{
@@ -25,28 +54,38 @@
 }
 
 
-
-/* ASK ISAIAH FOR HELP BECAUSE THIS GRID IS ASS */
-
-
-
 .herojpg{
     background-image: url(/assets/hero.jpg);
     grid-column: 1 / span 15;
     grid-row: 1 / span 14;
     margin: 0%;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .herotext{
     grid-column: 2/ span 3;
-    grid-row: 10;
+    grid-row: 11;
 }
 
 .sale{
     grid-row: 14;
     grid-column: 1/ span 15;
+    background-color: #1E2C20; 
+    margin: 0; 
+    padding: 10px;
 
+}
+
+.saletext{
+    font-family: 'Roboto-light', sans-serif;
+    color: white; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 0;
 }
 
 
@@ -66,6 +105,7 @@
     padding: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
+    font-family: 'Roboto-light', sans-serif ;
 }
 
 /* NavBar and Hero */
@@ -80,32 +120,80 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto 1fr;    
-    gap: 3rem;
-    justify-content: center;
+    gap: 2rem;
 }
 
 .startcookingtext{
-    display: flex;
-    justify-content: center;
+
+    justify-self: center;
     grid-column: span 4;
     grid-row: 1;
 }
 
+.startcookingtextsize{
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
+
+.cookingimgtext{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding-top: 1rem;
+}
+
+
 .cookingimg1{
-    grid-column: 1/4;
+    grid-column: 1;
     grid-row: 2;
+    justify-self: center;
 }
+
+.cookingimg1style{
+    width: 402px; 
+    height: 402px; 
+    border-radius: 10px; 
+    object-fit: cover
+}
+
 .cookingimg2{
-    grid-column: 2/4;
+    grid-column: 2;
     grid-row: 2;
+    justify-self: center;
 }
+
+.cookingimg2style{
+    width: 402px; 
+    height: 402px; 
+    border-radius: 10px; 
+    object-fit: cover
+}
+
 .cookingimg3{
-    grid-column: 3/4;
+    grid-column: 3;
     grid-row: 2;
+    justify-self: center;
 }
+
+.cookingimg3style{
+    width: 402px; 
+    height: 402px; 
+    border-radius: 10px; 
+    object-fit: cover
+}
+
 .cookingimg4{
-    grid-column: 4/4;
+    grid-column: 4;
     grid-row: 2;
+    justify-self: center;
+}
+
+.cookingimg4style{
+    width: 402px; 
+    height: 402px; 
+    border-radius: 10px; 
+    object-fit: cover
 }
 
 
@@ -113,16 +201,125 @@
 
 /* New Arrivals */
 
+.newarrivaltext{
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
 .newarrivalimg{
     width: 100%;
     height: 632px;
     object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+.newarrivalrowstyle{
+    margin-left: 5rem; 
+    margin-right: 5rem;
+}
+
+.colpaddingleft{
+    padding-left: 24px;
+}
+.colpaddingright{
+    padding-left: 24px;
+}
+
+.fallcollectiontextdiv{
+    display: flex; 
+    flex-direction: row; 
+    gap: 0.1rem;
+}
+
+.fallcollectionPtag{
+    font-family: 'Roboto',sans-serif;
+    width: auto;
+}
+
+.applecinbold{
+    font-family: 'Roboto',sans-serif;
+    width: auto;
+    font-weight: bold;
 }
 
 /* New Arrivals */
 
+/* Best Sellers */
+
+.bestsellerstext{
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+}
+
+.bestsellersrow{
+    display: flex; flex-direction: row; justify-content: center;
+}
+
+.cardborder{
+    border: 1px solid #000000; border-radius: 15px; height: 560px;
+}
+
+.middlecardborder{
+    border: 1px solid #000000; border-radius: 15px; margin-left: 6rem; margin-right: 6rem; 
+}
+.bottomcardborder{
+    border: 1px solid #000000; border-radius: 15px; 
+}
+
+.cardcontentpadding{
+    padding: 25px;
+}
+
+.cardimgstyle{
+    height: 300px; width: 400px; border-radius: 15px; object-fit: cover; margin-bottom: 1rem;
+}
+
+.cardtextwidth{
+    max-width: 400px;
+}
+
+.buttonstyle1{
+    background-color: #fff;
+    border: 1px solid #000000;
+    margin-top: 1rem ;
+    padding: 5px 35px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+.buttonstyle2{
+    background-color: #fff;
+    border: 1px solid #000000;
+    margin-top: 1rem ;
+    padding: 5px 35px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+.buttonstyle3{
+    background-color: #fff;
+    border: 1px solid #000000;
+    margin-top: 4rem;
+    padding: 5px 35px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+/* Best Sellers */
+
 
 /* Reviews */
+
+
 
 .reviewsgrid{
     width: 100%;
@@ -136,6 +333,28 @@
     grid-column: 2;
     grid-row: 1;
     justify-self: center;
+}
+
+.reviewtitle{
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.reviewh1{
+    display: flex;
+    font-family: 'Roboto',sans-serif;
+    font-weight: bold;
+    justify-content: center;
+}
+.reviewp{
+    font-family: 'Roboto',sans-serif;
+    display: flex;
+    justify-content: center;
 }
 
 .reviewimg1{
@@ -267,10 +486,319 @@
     color: rgb(142, 142, 142, 0.3)
  }
   
-  .submit {
+.submit {
     padding: 10px 35px;
     background-color: transparent;
     color: #fff;
     border: 1px solid white;
     cursor: pointer;
   }
+
+.padding{
+    padding: 1rem;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1820px) {
+    .cardsgrid {
+
+         margin: 5rem;
+            min-height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto 1fr 1fr;
+            gap: 2rem;
+    }
+
+    .cookingimg1{
+        grid-column: 1;
+        grid-row: 2;
+        justify-self: end;
+    }
+
+    .cookingimg2{
+        grid-column: 2;
+        grid-row: 2;
+        justify-self: start;
+    }
+
+    .cookingimg3{
+        grid-column: 1;
+        grid-row: 3;
+        justify-self: end;
+    }
+
+    .cookingimg4{
+        grid-column: 2;
+        grid-row: 3;
+        justify-self: start;
+    }
+    
+}
+
+@media screen and (max-width: 1700px) {
+    .reviewsgrid{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr ;
+        margin-bottom: 8rem;
+    }
+
+    .reviewtext{
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: start;
+    }
+    
+   
+    .reviewimg3{
+        background-image: url(/assets/Reviews3.jpg);
+        background-size: cover;
+        width: 531px;
+        height: 664.751px;
+        grid-column: 1;
+        grid-row: 3;
+        justify-self: end;
+        border-radius: 15px;
+        margin-top: 1rem;
+    }
+    
+    .reviewimg3overlay{
+          /* UI Properties */
+          opacity: 1;
+          /* Font */
+          background: rgba(18, 18, 18, 0.6);
+          color: rgb(255, 255, 255, 1);;
+          grid-column: 1;
+          grid-row: 4;
+          border-radius: 10px;
+          padding: 73px 28px;
+          height: 345px;
+          box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+          margin-left: 3rem;
+          margin-right: 3rem;
+          transform: translateY(50%);
+    }
+
+    .bestsellersrow{
+        display: flex; flex-direction: column; justify-content: center; align-items: center;
+    }
+
+    .cardborder{
+        border: 1px solid #000000; border-radius: 15px; height: 560px; width: 450px; 
+    }
+    
+    .middlecardborder{
+        border: 1px solid #000000; border-radius: 15px; width: 450px; margin-top: 2rem; margin-bottom: 2rem;
+    }
+    .bottomcardborder{
+        border: 1px solid #000000; border-radius: 15px; width: 450px;
+    }
+    
+}
+
+@media screen and (max-width: 1300px){
+    .navfont{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    
+    }
+    
+}
+
+@media screen and (max-width: 1025px){
+
+
+    .reviewsgrid{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr 1fr 1fr ;
+        margin-bottom: 8rem;
+    }
+
+    .reviewtext{
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: center;
+    }
+    .reviewimg1{
+        background-image: url(/assets/Reviews1.jpg);
+        background-size: cover;
+        width: 531px;
+        height: 664.751px;
+        grid-column: 1;
+        grid-row: 2;
+        justify-self: center;
+        border-radius: 15px;
+        margin-top: 1rem;
+    }
+    
+    .reviewimg1overlay{
+          /* UI Properties */
+          opacity: 1;
+          /* Font */
+          background: rgba(18, 18, 18, 0.6);
+          color: rgb(255, 255, 255, 1);;
+          grid-column: 1;
+          grid-row: 2;
+          border-radius: 10px;
+          padding: 73px 28px;
+          height: 345px;
+          box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+          margin-left: 3rem;
+          margin-right: 3rem;
+          transform: translateY(50%);
+    }
+
+    .reviewimg2{
+        background-image: url(/assets/Reviews2.jpg);
+        background-size: cover;
+        width: 531px;
+        height: 664.751px;
+        grid-column: 1;
+        grid-row: 3;
+        justify-self: center;
+        border-radius: 15px;
+        margin-top: 1rem;
+    }
+    
+    .reviewimg2overlay{
+          /* UI Properties */
+          opacity: 1;
+          /* Font */
+          background: rgba(18, 18, 18, 0.6);
+          color: rgb(255, 255, 255, 1);;
+          grid-column: 1;
+          grid-row: 4;
+          border-radius: 10px;
+          padding: 73px 28px;
+          height: 345px;
+          box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+          margin-left: 3rem;
+          margin-right: 3rem;
+          transform: translateY(50%);
+    }
+    
+   
+    .reviewimg3{
+        background-image: url(/assets/Reviews3.jpg);
+        background-size: cover;
+        width: 531px;
+        height: 664.751px;
+        grid-column: 1;
+        grid-row: 4;
+        justify-self: center;
+        border-radius: 15px;
+        margin-top: 1rem;
+    }
+    
+    .reviewimg3overlay{
+          /* UI Properties */
+          opacity: 1;
+          /* Font */
+          background: rgba(18, 18, 18, 0.6);
+          color: rgb(255, 255, 255, 1);;
+          grid-column: 1;
+          grid-row: 4;
+          border-radius: 10px;
+          padding: 73px 28px;
+          height: 345px;
+          box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+          margin-left: 3rem;
+          margin-right: 3rem;
+          transform: translateY(50%);
+    }
+}
+
+@media screen and (max-width:950px) {
+    .cardsgrid {
+
+        margin: 5rem;
+           min-height: 100%;
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           grid-template-rows: auto 1fr 1fr;
+           gap: 2rem;
+   }
+
+   .cookingimg1{
+       grid-column: 1;
+       grid-row: 2;
+       justify-self: end;
+   }
+
+   .cookingimg1style{
+    width: 302px; 
+    height: 302px; 
+    border-radius: 10px; 
+    object-fit: cover
+}
+
+   .cookingimg2{
+       grid-column: 2;
+       grid-row: 2;
+       justify-self: start;
+   }
+
+   .cookingimg2style{
+    width: 302px; 
+    height: 302px; 
+    border-radius: 10px; 
+    object-fit: cover
+}
+
+   .cookingimg3{
+       grid-column: 1;
+       grid-row: 3;
+       justify-self: end;
+   }
+
+   .cookingimg3style{
+    width: 302px; 
+    height: 302px; 
+    border-radius: 10px; 
+    object-fit: cover
+}
+
+   .cookingimg4{
+       grid-column: 2;
+       grid-row: 3;
+       justify-self: start;
+   }
+
+   .cookingimg4style{
+    width: 302px; 
+    height: 302px; 
+    border-radius: 10px; 
+    object-fit: cover
+}
+
+.colpaddingright{
+    margin-bottom: 2rem;
+}
+
+.submit {
+    padding: 10px 25px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid white;
+    cursor: pointer;
+  }
+
+  .email{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 200px;
+  }
+   
+
+    
+}

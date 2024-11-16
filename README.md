@@ -1,3 +1,9 @@
+Andrie Amor
+
+11/15/24
+
+Created a replica of website assigned. Includes responsivess for all resolutions at and below 1920px to 425px. Each section uses either flexbox, grid, or bootstrap exclusively. 
+
 
 Chainarung Nathan Dechyothin
 
